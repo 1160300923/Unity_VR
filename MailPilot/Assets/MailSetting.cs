@@ -6,8 +6,9 @@ public class MailSetting : MonoBehaviour
 {
     public TweenPosition mailboxTween;
     public TweenPosition mailOneTween;
-    
-    public 
+    public TweenPosition mailTwoTween;
+    public TweenPosition mailThreeTween;
+    public TweenPosition mailFourTween;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,4 +30,35 @@ public class MailSetting : MonoBehaviour
         mailboxTween.PlayReverse();
         mailOneTween.PlayReverse();
     }
+    public void OnMailTwoButtonClick()
+    {
+        mailboxTween.PlayForward();
+        mailTwoTween.PlayForward();
+    }
+    public void OnMailTwoBackButtonClick()
+    {
+        mailboxTween.PlayReverse();
+        mailTwoTween.PlayReverse();
+    }
+    public void OnMailThreeButtonClick()
+    {
+        mailboxTween.PlayForward();
+        mailThreeTween.PlayForward();
+    }
+    public void OnMailThreeBackButtonClick()
+    {
+        mailboxTween.PlayReverse();
+        mailThreeTween.PlayReverse();
+    }
+    public void OnMailFourButtonClick()
+    {
+        mailboxTween.PlayForward();
+        mailFourTween.PlayForward();
+    }
+    public void OnMailFourBackButtonClick()
+    {
+        mailboxTween.PlayReverse();
+        mailFourTween.PlayReverse();
+    }
+
 }
